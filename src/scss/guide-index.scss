@@ -1,4 +1,4 @@
 $font-path: "/src/style-core/fonts/";
-@import "/src/style-core/scss/core-index.scss";
+@import "./utils/utils.scss";
 @import "./config/config.scss";
-@import "./layout/layout.scss";
+@import "./components/components.scss";

@@ -1,0 +1,174 @@
+main {
+  position: relative;
+  width: 750px;
+  height: 930px;
+  margin: 0 auto;
+  background-image: url("#{$img-path}/common/pc-oca_apart.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.floating-box {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 90px;
+  top: 480px;
+  &:before {
+    content: "";
+    z-index: 2;
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("#{$img-path}/common/pc-icn_bell.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.floating-box__fixed {
+  z-index: 1;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 27px 0 rgba(53, 53, 53, 0.4);
+}
+
+.floating-box__fixed-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("#{$img-path}/common/pc-image.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.floating-box__slide {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  right: 58px;
+  transform: translateY(-50%);
+}
+
+.floating-box__slide-inner {
+  width: 300px;
+  height: 82px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 3px 27px 0 rgba(53, 53, 53, 0.4);
+  border-radius: 67px;
+  animation-name: repeatRightPosition;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.floating-box__slide-text {
+  width: 183px;
+  height: 52px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  background-image: url("#{$img-path}/common/pc-slide-text.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 183px 52px;
+}
+
+@keyframes repeatRightPosition {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: -240px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+// Retina
+@media only all and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dpi) {
+  .floating-box__fixed-image {
+    background-image: url("#{$img-path}/common/pc-image--lg.png");
+  }
+
+  .floating-box__slide-text {
+    background-image: url("#{$img-path}/common/pc-slide-text--lg.png");
+  }
+
+  .floating-box {
+    &:before {
+      background-image: url("#{$img-path}/common/pc-icn_bell--lg.png");
+    }
+  }
+}
+
+// Mobile
+@include respond-to("breakpoint-md") {
+  main {
+    width: 375px;
+    height: 708px;
+    background-image: url("#{$img-path}/common/mo-oca_apart.png");
+    background-size: 375px 708px;
+  }
+
+  .floating-box {
+    width: 86px;
+    height: 86px;
+    right: 10px;
+    top: 330px;
+    &:before {
+      width: 24px;
+      height: 24px;
+      background-image: url("#{$img-path}/common/mo-icn_bell--lg.png");
+    }
+  }
+
+  .floating-box__fixed {
+    width: 86px;
+    height: 86px;
+  }
+
+  .floating-box__slide {
+    right: 33px;
+  }
+
+  .floating-box__slide-inner {
+    width: 214px;
+    height: 60px;
+  }
+
+  .floating-box__slide-text {
+    width: 129px;
+    height: 37px;
+    left: 22px;
+    background-image: url("#{$img-path}/common/mo-slide-text--lg.png");
+    background-size: 129px 37px;
+  }
+
+  @keyframes repeatRightPosition {
+    0% {
+      right: -180px;
+    }
+    50% {
+      right: 0;
+    }
+    100% {
+      right: -180px;
+    }
+  }
+}
