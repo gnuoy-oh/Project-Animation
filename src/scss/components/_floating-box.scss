@@ -37,6 +37,7 @@ main {
   width: 120px;
   height: 120px;
   position: relative;
+  background-color: #eee;
   border: 4px solid #fff;
   border-radius: 50%;
   box-shadow: 0 3px 27px 0 rgba(53, 53, 53, 0.4);
@@ -65,13 +66,25 @@ main {
   height: 82px;
   position: relative;
   background-color: #fff;
-  box-shadow: 0 3px 27px 0 rgba(53, 53, 53, 0.4);
   border-radius: 67px;
-  animation-name: repeatRightPosition;
-  animation-duration: 6s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  // animation-name: repeatRightPosition;
+  // animation-duration: 4s;
+  // animation-timing-function: ease-in-out;
+  // animation-iteration-count: infinite;
+  // animation-direction: normal;
 }
+
+// @keyframes repeatRightPosition {
+//   0% {
+//     right: 0;
+//   }
+//   50% {
+//     right: -240px;
+//   }
+//   100% {
+//     right: 0;
+//   }
+// }
 
 .floating-box__slide-text {
   width: 183px;
@@ -84,18 +97,6 @@ main {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 183px 52px;
-}
-
-@keyframes repeatRightPosition {
-  0% {
-    right: 0;
-  }
-  50% {
-    right: -240px;
-  }
-  100% {
-    right: 0;
-  }
 }
 
 // Retina
@@ -160,15 +161,15 @@ main {
     background-size: 129px 37px;
   }
 
-  @keyframes repeatRightPosition {
-    0% {
-      right: -180px;
-    }
-    50% {
-      right: 0;
-    }
-    100% {
-      right: -180px;
-    }
-  }
+  // @keyframes repeatRightPosition {
+  //   0% {
+  //     right: -180px;
+  //   }
+  //   50% {
+  //     right: 0;
+  //   }
+  //   100% {
+  //     right: -180px;
+  //   }
+  // }
 }
