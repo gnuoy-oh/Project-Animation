@@ -226,8 +226,7 @@
     width: 100%;
     height: rem(647px);
     &:after {
-      background-image: url("#{$img-path}/mobile/oca_apart.png");
-      background-size: 375px 708px;
+      background-image: url("#{$img-path}/mobile/oca_apart--lg.png");
     }
   }
 
