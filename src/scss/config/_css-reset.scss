@@ -80,7 +80,8 @@ body {
 }
 
 body {
-  background-color: #d4dad4;
+  min-width: rem(1500px);
+  margin: 0 auto;
 }
 
 * {
