@@ -1,3 +1,28 @@
+// ------------------------------------------------------
+// 접근성 대응
+// ------------------------------------------------------
+.ir-pm {
+  position: absolute;
+  width: rem(1px);
+  height: rem(1px);
+  clip: rect(0 0 0 0);
+  margin: rem(-1px);
+  overflow: hidden;
+}
+
+.screen-out {
+  position: absolute;
+  width: rem(1px);
+  height: rem(1px);
+  padding: 0;
+  margin: rem(-1px);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  visibility: visible;
+  white-space: nowrap;
+}
+
 .component-content {
   position: relative;
   width: rem(1500px);
