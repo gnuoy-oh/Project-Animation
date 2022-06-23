@@ -398,7 +398,7 @@ main {
   }
 
   .floating-waiting-box__image {
-    background-image: url(../images/mobile/coming-soon.png);
+    background-image: url(./images/mobile/coming-soon.png);
   }
 
   .floating-box {
@@ -408,7 +408,7 @@ main {
   .floating-box:before {
     width: 25px;
     height: 24px;
-    background-image: url(../images/mobile/icn_bell.png);
+    background-image: url(./images/mobile/icn_bell.png);
   }
   .floating-box.floating-box--right {
     right: 342px;
@@ -432,7 +432,7 @@ main {
     height: 29px;
     left: 29px;
     background-size: 102px 29px;
-    background-image: url(../images/mobile/slide-text-right.png);
+    background-image: url(./images/mobile/slide-text-right.png);
   }
   .floating-box.floating-box--left {
     left: 342px;
@@ -456,7 +456,7 @@ main {
     height: 29px;
     right: 16px;
     background-size: 100px 29px;
-    background-image: url(../images/mobile/slide-text-left.png);
+    background-image: url(./images/mobile/slide-text-left.png);
   }
 
   .floating-box__fixed {
@@ -559,11 +559,7 @@ main {
     }
   }
 }
-@media only all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 0.020833333333333332) and (min-width: 768px), only screen and (min-resolution: 2dpi) and (min-width: 768px) {
-  main:after {
-    background-image: url(./images/pc/background--lg.png);
-  }
-
+@media only all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px), only screen and (-webkit-min-device-pixel-ratio: 0.020833333333333332) and (min-width: 331px), only screen and (min-resolution: 2dpi) and (min-width: 331px) {
   .component-content:after {
     background-image: url(./images/pc/background--lg.png);
   }
