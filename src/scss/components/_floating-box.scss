@@ -3,19 +3,19 @@
 // ------------------------------------------------------
 .ir-pm {
   position: absolute;
-  width: rem(1px);
-  height: rem(1px);
+  width: 1px;
+  height: 1px;
   clip: rect(0 0 0 0);
-  margin: rem(-1px);
+  margin: -1px;
   overflow: hidden;
 }
 
 .screen-out {
   position: absolute;
-  width: rem(1px);
-  height: rem(1px);
+  width: 1px;
+  height: 1px;
   padding: 0;
-  margin: rem(-1px);
+  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
@@ -23,10 +23,17 @@
   white-space: nowrap;
 }
 
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .component-content {
   position: relative;
-  width: rem(1500px);
-  height: rem(894px);
+  width: 973px;
+  height: 500px;
   margin: 0 auto;
   background: linear-gradient(to top, #c5cec3, #b0b9ad 60%, #adb7aa);
   &:after {
@@ -40,17 +47,17 @@
     background-image: url("#{$img-path}/pc/background.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 973px 500px;
   }
 }
 
 .floating-waiting-box {
   z-index: 5;
-  width: rem(120px);
-  height: rem(120px);
+  width: 60px;
+  height: 60px;
   position: absolute;
-  right: rem(472px);
-  top: rem(262px);
+  right: 310px;
+  top: 147px;
   border-radius: 50%;
   box-shadow: 0 2px 15px 0 rgba(53, 53, 53, 0.4);
 }
@@ -66,15 +73,15 @@
 
 .floating-box {
   z-index: 5;
-  width: rem(120px);
-  height: rem(120px);
+  width: 60px;
+  height: 60px;
   position: absolute;
   &:before {
     content: "";
     z-index: 2;
     display: block;
-    width: rem(36px);
-    height: rem(35px);
+    width: 18px;
+    height: 18px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -85,8 +92,8 @@
   }
 
   &.floating-box--right {
-    right: rem(472px);
-    top: rem(480px);
+    top: 268px;
+    right: 310px;
     .floating-box__fixed {
       &:hover {
         + .floating-box__slide .floating-box__slide-inner {
@@ -98,22 +105,22 @@
       background-image: url("#{$img-path}/pc/image-right.png");
     }
     .floating-box__slide {
-      right: rem(54px);
+      right: 27px;
     }
     .floating-box__slide-inner {
       animation-name: rightMoveSlide;
     }
     .floating-box__slide-text {
-      width: rem(183px);
-      left: rem(30px);
+      width: 91px;
+      left: 15px;
       background-image: url("#{$img-path}/pc/slide-text-right.png");
-      background-size: rem(183px) rem(52px);
+      background-size: 91px 27px;
     }
   }
 
   &.floating-box--left {
-    left: rem(460px);
-    top: rem(672px);
+    left: 310px;
+    top: 380px;
     .floating-box__fixed {
       &:hover {
         + .floating-box__slide .floating-box__slide-inner {
@@ -125,16 +132,16 @@
       background-image: url("#{$img-path}/pc/image-left.png");
     }
     .floating-box__slide {
-      left: rem(54px);
+      left: 27px;
     }
     .floating-box__slide-inner {
       animation-name: leftMoveSlide;
     }
     .floating-box__slide-text {
-      width: rem(179px);
-      right: rem(20px);
+      width: 89px;
+      right: 20px;
       background-image: url("#{$img-path}/pc/slide-text-left.png");
-      background-size: rem(179px) rem(52px);
+      background-size: 89px 27px;
     }
   }
 }
@@ -143,11 +150,11 @@
   z-index: 1;
   overflow: hidden;
   display: block;
-  width: rem(120px);
-  height: rem(120px);
+  width: 60px;
+  height: 60px;
   position: relative;
   background-color: #eee;
-  border: rem(4px) solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: 0 3px 27px 0 rgba(53, 53, 53, 0.4);
   &:hover {
@@ -178,8 +185,8 @@
 }
 
 .floating-box__slide-inner {
-  width: rem(300px);
-  height: rem(84px);
+  width: 150px;
+  height: 42px;
   position: relative;
   background-color: #fff;
   border-radius: 40px;
@@ -191,11 +198,10 @@
 }
 
 .floating-box__slide-text {
-  height: rem(52px);
+  height: 26px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-image: url("#{$img-path}/pc/slide-text-right.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -208,13 +214,13 @@
     right: 0;
   }
   100% {
-    right: rem(-240px);
+    right: -120px;
   }
 }
 
 @keyframes rightMoveSlideReverse {
   0% {
-    right: rem(-240px);
+    right: -120px;
   }
   100% {
     right: 0;
@@ -226,13 +232,13 @@
     left: 0;
   }
   100% {
-    left: rem(-240px);
+    left: -120px;
   }
 }
 
 @keyframes leftMoveSlideReverse {
   0% {
-    left: rem(-240px);
+    left: -120px;
   }
   100% {
     left: 0;
@@ -242,43 +248,31 @@
 // ------------------------------------------------------
 // Responsive
 // ------------------------------------------------------
-@include respond-to("breakpoint-sm") {
-  body {
-    min-width: 100%;
-  }
-
-  .component-content {
-    width: 100%;
-    height: rem(647px);
-    &:after {
-      background-image: url("#{$img-path}/mobile/oca_apart--lg.png");
-    }
-  }
-
+@include respond-to("breakpoint-xs") {
   .floating-waiting-box {
-    width: rem(86px);
-    height: rem(86px);
-    right: rem(10px);
-    top: rem(198px);
+    width: 68px;
+    height: 68px;
+    right: 335px;
+    top: 147px;
   }
 
   .floating-waiting-box__image {
-    background-image: url("#{$img-path}/mobile/coming-soon--lg.png");
+    background-image: url("#{$img-path}/mobile/coming-soon.png");
   }
 
   .floating-box {
-    width: rem(86px);
-    height: rem(86px);
+    width: 68px;
+    height: 68px;
 
     &:before {
-      width: rem(24px);
-      height: rem(24px);
-      background-image: url("#{$img-path}/mobile/icn_bell--lg.png");
+      width: 25px;
+      height: 24px;
+      background-image: url("#{$img-path}/mobile/icn_bell.png");
     }
 
     &.floating-box--right {
-      right: rem(10px);
-      top: rem(352px);
+      right: 335px;
+      top: 262px;
       .floating-box__fixed {
         &:hover,
         &:active {
@@ -288,22 +282,24 @@
         }
       }
       .floating-box__slide {
-        right: rem(37px);
+        right: 37px;
       }
       .floating-box__slide-inner {
-        width: rem(214px);
+        width: 168px;
+        height: 47px;
         animation-name: rightMoveSlideReverse;
       }
       .floating-box__slide-text {
-        width: rem(129px);
-        left: rem(22px);
-        background-size: rem(129px) rem(37px);
-        background-image: url("#{$img-path}/mobile/slide-text-right--lg.png");
+        width: 102px;
+        height: 29px;
+        left: 29px;
+        background-size: 102px 29px;
+        background-image: url("#{$img-path}/mobile/slide-text-right.png");
       }
     }
     &.floating-box--left {
-      left: rem(10px);
-      top: rem(498px);
+      left: 335px;
+      top: 375px;
       .floating-box__fixed {
         &:hover,
         &:active {
@@ -313,24 +309,26 @@
         }
       }
       .floating-box__slide {
-        left: rem(37px);
+        left: 37px;
       }
       .floating-box__slide-inner {
-        width: rem(207px);
+        width: 163px;
+        height: 47px;
         animation-name: leftMoveSlideReverse;
       }
       .floating-box__slide-text {
-        width: rem(127px);
-        right: rem(16px);
-        background-size: rem(127px) rem(37px);
-        background-image: url("#{$img-path}/mobile/slide-text-left--lg.png");
+        width: 100px;
+        height: 29px;
+        right: 16px;
+        background-size: 100px 29px;
+        background-image: url("#{$img-path}/mobile/slide-text-left.png");
       }
     }
   }
 
   .floating-box__fixed {
-    width: rem(86px);
-    height: rem(86px);
+    width: 68px;
+    height: 68px;
     -webkit-touch-select: none;
     &:hover,
     &:active {
@@ -344,7 +342,7 @@
   }
 
   .floating-box__slide-inner {
-    height: rem(60px);
+    height: 60px;
     animation-delay: 0.2s;
     animation-duration: 1.2s;
     animation-timing-function: ease-in-out;
@@ -353,7 +351,7 @@
   }
 
   .floating-box__slide-text {
-    height: rem(37px);
+    height: 37px;
   }
 
   @keyframes rightMoveSlide {
@@ -361,13 +359,13 @@
       right: 0;
     }
     100% {
-      right: rem(-180px);
+      right: -180px;
     }
   }
 
   @keyframes rightMoveSlideReverse {
     0% {
-      right: rem(-180px);
+      right: -180px;
     }
     100% {
       right: 0;
@@ -378,13 +376,13 @@
       left: 0;
     }
     100% {
-      left: rem(-180px);
+      left: -180px;
     }
   }
 
   @keyframes leftMoveSlideReverse {
     0% {
-      left: rem(-180px);
+      left: -180px;
     }
     100% {
       left: 0;
@@ -395,13 +393,23 @@
 // ------------------------------------------------------
 // Retina
 // ------------------------------------------------------
-@media only all and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 2dpi) {
+@media only all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  only screen and (min-resolution: 2dpi) and (min-width: 768px) {
   main {
     &:after {
       background-image: url("#{$img-path}/pc/background--lg.png");
     }
+  }
+
+  .component-content {
+    &:after {
+      background-image: url("#{$img-path}/pc/background--lg.png");
+    }
+  }
+
+  .floating-waiting-box__image {
+    background-image: url("#{$img-path}/pc/coming-soon--lg.png");
   }
 
   .floating-box.floating-box--right {
