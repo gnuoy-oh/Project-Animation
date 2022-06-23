@@ -142,11 +142,9 @@ main {
 
 .component-content {
   position: relative;
-  width: 973px;
+  width: 939px;
   height: 500px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left bottom, left top, from(#c5cec3), color-stop(60%, #b0b9ad), to(#adb7aa));
-  background: linear-gradient(to top, #c5cec3, #b0b9ad 60%, #adb7aa);
 }
 .component-content:after {
   content: "";
@@ -157,10 +155,10 @@ main {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url(./images/pc/background.png);
+  background-image: url(./images/pc/background.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: 973px 500px;
+  background-size: 100%;
 }
 
 .floating-waiting-box {
@@ -560,10 +558,6 @@ main {
   }
 }
 @media only all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px), only screen and (-webkit-min-device-pixel-ratio: 0.020833333333333332) and (min-width: 331px), only screen and (min-resolution: 2dpi) and (min-width: 331px) {
-  .component-content:after {
-    background-image: url(./images/pc/background--lg.png);
-  }
-
   .floating-waiting-box__image {
     background-image: url(./images/pc/coming-soon--lg.png);
   }
