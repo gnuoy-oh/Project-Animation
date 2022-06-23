@@ -393,7 +393,7 @@ main {
   .floating-waiting-box {
     width: 68px;
     height: 68px;
-    right: 335px;
+    right: 342px;
     top: 147px;
   }
 
@@ -411,7 +411,7 @@ main {
     background-image: url(../images/mobile/icn_bell.png);
   }
   .floating-box.floating-box--right {
-    right: 335px;
+    right: 342px;
     top: 262px;
   }
   .floating-box.floating-box--right .floating-box__fixed:hover + .floating-box__slide .floating-box__slide-inner, .floating-box.floating-box--right .floating-box__fixed:active + .floating-box__slide .floating-box__slide-inner {
@@ -435,7 +435,7 @@ main {
     background-image: url(../images/mobile/slide-text-right.png);
   }
   .floating-box.floating-box--left {
-    left: 335px;
+    left: 342px;
     top: 375px;
   }
   .floating-box.floating-box--left .floating-box__fixed:hover + .floating-box__slide .floating-box__slide-inner, .floating-box.floating-box--left .floating-box__fixed:active + .floating-box__slide .floating-box__slide-inner {
