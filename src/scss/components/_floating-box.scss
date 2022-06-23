@@ -393,15 +393,9 @@ main {
 // ------------------------------------------------------
 // Retina
 // ------------------------------------------------------
-@media only all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
-  only screen and (min-resolution: 2dpi) and (min-width: 768px) {
-  main {
-    &:after {
-      background-image: url("#{$img-path}/pc/background--lg.png");
-    }
-  }
-
+@media only all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px),
+  only screen and (min-resolution: 2dpi) and (min-width: 331px) {
   .component-content {
     &:after {
       background-image: url("#{$img-path}/pc/background--lg.png");
