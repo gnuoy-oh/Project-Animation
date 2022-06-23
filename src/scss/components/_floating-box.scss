@@ -32,10 +32,9 @@ main {
 
 .component-content {
   position: relative;
-  width: 973px;
+  width: 939px;
   height: 500px;
   margin: 0 auto;
-  background: linear-gradient(to top, #c5cec3, #b0b9ad 60%, #adb7aa);
   &:after {
     content: "";
     width: 100%;
@@ -44,10 +43,10 @@ main {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("#{$img-path}/pc/background.png");
+    background-image: url("#{$img-path}/pc/background.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: 973px 500px;
+    background-size: 939px 500px;
   }
 }
 
@@ -56,7 +55,7 @@ main {
   width: 60px;
   height: 60px;
   position: absolute;
-  right: 310px;
+  right: 326px;
   top: 147px;
   border-radius: 50%;
   box-shadow: 0 2px 15px 0 rgba(53, 53, 53, 0.4);
@@ -93,7 +92,7 @@ main {
 
   &.floating-box--right {
     top: 268px;
-    right: 310px;
+    right: 326px;
     .floating-box__fixed {
       &:hover {
         + .floating-box__slide .floating-box__slide-inner {
@@ -119,7 +118,7 @@ main {
   }
 
   &.floating-box--left {
-    left: 310px;
+    left: 326px;
     top: 380px;
     .floating-box__fixed {
       &:hover {
@@ -252,7 +251,7 @@ main {
   .floating-waiting-box {
     width: 68px;
     height: 68px;
-    right: 342px;
+    right: 352px;
     top: 147px;
   }
 
@@ -271,7 +270,7 @@ main {
     }
 
     &.floating-box--right {
-      right: 342px;
+      right: 352px;
       top: 262px;
       .floating-box__fixed {
         &:hover,
@@ -298,7 +297,7 @@ main {
       }
     }
     &.floating-box--left {
-      left: 342px;
+      left: 352px;
       top: 375px;
       .floating-box__fixed {
         &:hover,
@@ -396,12 +395,6 @@ main {
 @media only all and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px),
   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 331px),
   only screen and (min-resolution: 2dpi) and (min-width: 331px) {
-  .component-content {
-    &:after {
-      background-image: url("#{$img-path}/pc/background--lg.png");
-    }
-  }
-
   .floating-waiting-box__image {
     background-image: url("#{$img-path}/pc/coming-soon--lg.png");
   }
