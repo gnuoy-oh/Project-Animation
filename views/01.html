@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/scss/style.min.css" />
+</head>
+
+<body>
+  <main>
+    <div class="component-content">
+      <div class="component-content__badge">
+        <span class="component-content__badge-order"> 기능1 </span>
+        <span class="component-content__badge-text"> 스테인리스 세탁통 </span>
+      </div>
+      <h2 class="component-content__title">스테인리가 증명하는 따뜻함</h2>
+
+      <div class="component-content__source">
+        <span class="ir-pm">LG Objet Collection</span>
+        <video height="180" width="288" controls>
+          <source src="../src/images/video/01-01.mp4" type="video/mp4" />
+          이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때 화면에
+          표시됩니다!
+        </video>
+      </div>
+      <div class="component-content__description">
+        <p class="component-content__description-text">
+          *소비자의 이해를 돕기 위해 연출된 이미지입니다.
+        </p>
+        <p class="component-content__description-text">
+          *소비자의 이해를 돕기 위해 연출된 이미지입니다.
+        </p>
+      </div>
+      <button type="button" class="component-content__button">
+        <span class="component-content__button-icon"></span>
+        <span class="component-content__button-text"> 세부정보 </span>
+      </button>
+      <p class="component-content__paragraph">
+        세탁통과 리프터가 모두 스테인리스로 제작되어
+        <em>내구성이 향상되고 위생적으로 관리할 수 있어요.</em>
+      </p>
+    </div>
+  </main>
+  <div class="modal" style="display: none">
+    <div class="modal__dimmed"></div>
+    <div class="modal__content">
+      <div class="modal__head">
+        <div class="modal__head-title">
+          <span class="modal__head-title-text">Title</span>
+          <span class="modal__head-subtitle">subtitle</span>
+        </div>
+        <div class="modal__head-close">
+          <button class="modal__head-close-button button" title="닫기">
+            <span class="modal__head-close-icon">
+              <span class="ir-pm">닫기</span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="modal__body">modal__body</div>
+      <div class="modasl__foot">
+        <button type="button" class="modal__foot-button button">
+          <span>button</span>
+        </button>
+        <button type="button" class="modal__foot-button button">
+          <span>button</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<script></script>
+
+</html>

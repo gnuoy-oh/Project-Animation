@@ -1,18 +1,16 @@
 html {
-  font-size: $base-font-size; // 16px = 1rem
 }
 
 body {
-  @include font-size("14");
-  @include letter-spacing;
-  @include line-height("body");
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.5;
   color: #212121;
   background-color: #fff;
 }
 
 pre,
 code {
-  @include font-size("13");
 }
 
 strong {

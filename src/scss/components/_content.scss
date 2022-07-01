@@ -1,0 +1,24 @@
+.component-content {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 300px) {
+  .floating-waiting-box {
+    width: 68px;
+    height: 68px;
+    right: 342px;
+    top: 147px;
+  }
+
+  .floating-waiting-box__image {
+    background-image: url(./images/mobile/coming-soon.png);
+  }
+
+  .floating-box {
+    width: 68px;
+    height: 68px;
+  }
+}
