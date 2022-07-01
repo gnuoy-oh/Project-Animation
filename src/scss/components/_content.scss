@@ -1,24 +1,49 @@
+main {
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .component-content {
   position: relative;
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
+}
+
+.component-content__link {
+  position: absolute;
+  width: 12%;
+  height: 3%;
+  background: transparent;
+}
+
+.component-content__img {
+  display: block;
+  width: 100%;
+}
+
+.component-content__source {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.component-content__video {
+  width: 100%;
 }
 
 @media (max-width: 300px) {
-  .floating-waiting-box {
-    width: 68px;
-    height: 68px;
-    right: 342px;
-    top: 147px;
+  main {
+    min-width: 300px;
+    max-width: none;
   }
 
-  .floating-waiting-box__image {
-    background-image: url(./images/mobile/coming-soon.png);
-  }
-
-  .floating-box {
-    width: 68px;
-    height: 68px;
+  .component-content {
+    width: 100%;
+    height: auto;
   }
 }
