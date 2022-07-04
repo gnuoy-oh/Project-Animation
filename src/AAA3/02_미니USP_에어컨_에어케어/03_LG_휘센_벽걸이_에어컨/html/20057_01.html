@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 1
+          </span>
+          <span class="badge__text">
+            아이스 쿨파워
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          쿨쿨익선이 필요할 때
+        </h2>
+        <div class="component-content__source">
+          <img src="../images/20057_01_contents.png" alt="에어컨" class="component-content__img">
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 아이스 쿨파워 시험 조건
+            </p>
+            <button onclick="uspPopOpen('usp_pop_20057_01');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          폭염으로 강력한 냉방이 필요할 땐,
+          <br />일반 냉방 온도 대비 <em>4℃ 더 낮은 바람을</em>
+          <br />보내주는 <em>쾌속 냉방 모드</em>를 사용해보세요.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_20057_01">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_20057_01');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              시험 장소 : 칼로리미터 시험실(자사)
+            </dd>
+            <dd>
+              시험 조건 : 실내 건구 27℃ 습구 19℃, 실외 건구 35℃ 습구 24 ℃
+            </dd>
+            <dd>
+              시험 모델명 : SQ07P9JWAS
+            </dd>
+            <dd>
+              시험 방법 : 희망온도 25도 설정 후 강풍 모드와 쿨파워 모드 바람 온도 비교
+            </dd>
+            <dd>
+              자사 시험 결과로 실제 사용환경에 따라 다를 수 있습니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

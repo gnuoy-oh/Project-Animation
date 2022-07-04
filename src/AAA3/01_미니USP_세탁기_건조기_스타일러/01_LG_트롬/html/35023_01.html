@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--purple component-content--video">
+        <div class="badge">
+          <span class="badge__order">
+            기능 1
+          </span>
+          <span class="badge__text">
+            인공지능 DD기술 x 6모션
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          손빨래 부럽지 않은 섬세한 세탁
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능1_인공지능DD기술x6모션(영상).mp4" type="video/mp4" />
+            인공지능 DD기술 x 6모션 영상
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 영상입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 인공지능 세탁코스
+            </p>
+            <button onclick="uspPopOpen('usp_pop_35023_01');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>옷감 무게, 소재를 감지하는 인공지능 DD기술과</em>
+          <br /><em>손빨래 동작에 섬세하게 구현한 6모션</em>이
+          <br />세탁물에 맞춰 정교하게 세탁을 진행해요.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_35023_01">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_35023_01');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [6모션]
+            </dt>
+            <dd>
+              6모션이란?
+              <br /> 직접 빨래를 말리는 동작과 자연 바람의 움직임을 본뜬 6가지 건조 모션으로 건조 코스별 최적화된 효율을 위해 코스별 모션은 다르게 적용됩니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

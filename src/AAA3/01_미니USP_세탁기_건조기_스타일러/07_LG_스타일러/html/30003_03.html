@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--pink">
+        <div class="badge">
+          <span class="badge__order">
+            기능 3
+          </span>
+          <span class="badge__text">
+            실내 제습
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          상상도 못한 기능! 물 먹는 제습기
+        </h2>
+        <div class="component-content__source">
+          <img src="../images/20011_03_contents.png" alt="" class="component-content__img">
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 영상입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 주의사항 / 등록특허 / 최대 10L 제습 용량
+            </p>
+            <button onclick="uspPopOpen('usp_pop_30003_03');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          드레스룸에 스타일러로 제습기능을 더해보세요.
+          <br /><em>최대 10L 제습 용량으로</em>
+          <br /><em>실내공기와 옷까지 보송하게 만들어요.</em>
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_30003_03">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_30003_03');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [주의사항]
+            </dt>
+            <dd>
+              반드시 도어를 45도 이상 열고 사용해야 하며, 실사용 환경에 따라
+              제습 성능이 달라질 수 있습니다.
+            </dd>
+            <dt>
+              [등록특허]
+            </dt>
+            <dd>
+              히트펌프 저온제습 건조 관련 등록특허 22건 (‘19.10.16 기준)
+            </dd>
+            <dt>
+              [최대 10L 제습 용량]
+            </dt>
+            <dd>
+              자사 시험 결과, 기온 27℃, 습도 60% 기준 실내제습 코스로 하루 동안
+              제습 가능한 용량을 말함(‘17.09.04 기준, 스타일러 5벌식)
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

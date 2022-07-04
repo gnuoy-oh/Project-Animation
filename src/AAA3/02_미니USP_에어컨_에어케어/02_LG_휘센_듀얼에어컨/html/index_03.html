@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--green component-content--video">
+        <div class="badge">
+          <span class="badge__order">
+            기능 3
+          </span>
+          <span class="badge__text">
+            인공지능 듀얼 인버터
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          종일 틀어놔도 전기요금 걱정 뚝!
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능3_인공지능 듀얼 인버터(영상).mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 이미지입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 듀얼 인버터 컴프레서
+            </p>
+            <button onclick="uspPopOpen('usp_pop_index_03');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          쾌속 냉방으로 실내 온도를 빠르게 낮춰주고
+          <br />설정한 온도에 도달하면 낭비되는 에너지를 줄여줘요.
+          <br /><em>최대 30% 절전으로 시원함을 유지해요.</em>
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_index_03">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_index_03');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              시험 장소 : 주택환경시험실(자사), 85.7㎡
+            </dd>
+            <dd>
+              시험 조건 : 실내 건구 33℃, 습구 22.4℃ / 실외 건구 35℃, 습구 24℃ 추가
+            </dd>
+            <dd>
+              시험 모델명 : FQ23LADRA2(20년 모델), FQ22P7DPA2(17년 모델)
+            </dd>
+            <dd>
+              시험 방법 : 설정 온도 24도로 2시간 냉방 운전 시 소비전력 비교
+            </dd>
+            <dd>
+              자사시험 결과로 실사용 환경 조건에 따라 다를 수 있습니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

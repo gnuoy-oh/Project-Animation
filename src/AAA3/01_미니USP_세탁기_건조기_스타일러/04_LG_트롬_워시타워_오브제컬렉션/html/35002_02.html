@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--purple">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            원바디 세탁-건조 프로세스
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          코스 설정? 맡겨만 줘!
+        </h2>
+        <div class="component-content__source">
+          <img class="component-content__img" src="../images/35001_02_contents.png" alt="원바디 세탁-건조 프로세스">
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 이미지입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 건조 준비 시간 단축
+            </p>
+            <button onclick="uspPopOpen('usp_pop_35002_02');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>세탁에 맞춰서 준비되는 건조 코스!</em>
+          <br />세탁이 끝날 무렵 건조기를 미리 예열시켜
+          <br />신속한 건조를 준비해요.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_35002_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_35002_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [건조 준비 시간 단축]
+            </dt>
+            <dd>
+              세탁 시작 전 건조 준비 버튼을 누르면 사용할 수 있는 기능입니다.
+            </dd>
+            <dd>
+              '건조준비' 기능은 모든 코스에서 사용 가능하며, 건조 준비 중 예상 건조시간이
+              건조 시 디스플레이에 표기되는 기능입니다.
+              <br />
+              (건조준비 버튼을 눌러야 하며, 다운로드 코스는 제외)
+            </dd>
+            <dd>
+              인터텍 시험 결과, 자사가 제시한 시험기 준으로
+
+              스피드워시 세탁코스에 건조준비 옵션을 선택한 후 소량급속 건조 코스로
+              동작 시, 파자마 상/하의 2세트(면73%, 폴리에스터 27%) 조건에서
+              건조준비 옵션 미적용 대비 세탁+건조시간 최대 11% 단축
+            </dd>
+            <dd>
+              시간 단축효과는 실제 사용환경 및 코스에 따라 다를 수 있음
+              <br />
+              (다운로드 코스는 제외)
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 1
+          </span>
+          <span class="badge__text">
+            하이브리드 청정관리 - 자동청정
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          에어컨도 셀프 청소하는 시대
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능1_하이브리드 청정관리-자동청정(영상).mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 영상이며, 제품별 색상 및 스펙은 상이합니다.
+            </p>
+            <p class="component-content__description-text">
+              * [1단계] 필터클린봇 / [2단계] 향균극세필터 / [3단계] CAC 인증 공기청정 / [4단계] 열교환기 세척 / [5단계] AI 건조 / [6단계] UV LED 팬살균
+            </p>
+            <button onclick="uspPopOpen('usp_pop_26005_01');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          LG 휘센 타워에어컨은 바람이 지나가는 길을
+          <br /><em>총 6단계에 걸쳐 깨끗하게 관리해요.</em>
+          <br />매번 나사를 풀어 청소하지 않아도 돼요.
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="usp_pop_26005_01">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_26005_01');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>[1단계] 필터클린봇</dt>
+            <dd>하루 8시간 사용 기준, 총 56시간(1주일) 누적 사용 시 필터클린봇 청소
+              기능 작동(*에어컨 운전 종료 시) 에어컨 미작동 시,
+              리모컨으로 필터클린봇 청소 기능 작동 가능</dd>
+            <dd>청소 성능: 자사 시험으로 Lint먼지(면 보푸라기)를 필터에 부착 후
+              먼지 제거 정도로 확인하였으며, 클린봇이 필터를 청소하더라도
+              6개월 주기로 먼지통을 비워야 하며 수동으로 필터 청소도 가능합니다.</dd>
+            <dd>냉방 성능 유지: 실험조건-실내기 강풍 자동운전/ 흡입구 차폐 후
+              냉방 테스트 결과, 실내 27℃, 실외 35℃, 실험모델 F-Q23LADRA1,
+              실험결과 - 열교환기 후면 60% 이상 막힐 시, 냉방 성능 20% 하락</dd>
+            <dd>자사 시험 결과로 실제 환경에 따라 다를 수 있습니다.</dd>
+            <dd>필터의 청소 정도는 사용 환경이나 사용 패턴에 따라 다를 수 있습니다.</dd>
+            <dt>[2단계] 항균극세필터</dt>
+            <dd>극세필터는 생활먼지, 애완동물 털 등 입자가 큰 먼지를 걸러줍니다.</dd>
+            <dd>본 시험 결과는 ISO 시험 규격에 따라 국제 공인시험기관으로부터
+              황색포도상구균 99.9%, 폐렴균 99.9%, 대장균 99.9% 감소율에 대한
+              시험 성적서를 취득하였으며 이는 실사용 환경에 따라</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

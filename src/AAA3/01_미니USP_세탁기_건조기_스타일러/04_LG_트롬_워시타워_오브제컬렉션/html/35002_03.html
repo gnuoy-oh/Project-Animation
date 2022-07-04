@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--purple component-content--video">
+        <div class="badge">
+          <span class="badge__order">
+            기능 3
+          </span>
+          <span class="badge__text">
+            인공지능 DD기술 x 6모션
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          손빨래 부럽지 않은 섬세한 세탁
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능3_인공지능DD기술x6모션(영상).mp4" type="video/mp4" />
+            인공지능DD기술x6모션 영상
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 영상입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 인공지능 세탁코스
+            </p>
+            <button onclick="uspPopOpen('usp_pop_35002_03');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>옷감 무게, 소재를 감지하는 인공지능 DD기술과</em>
+          <br /><em>손빨래 동작에 섬세하게 구현한 6모션</em>이
+          <br />세탁물에 맞춰 정교하게 세탁을 진행해요.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_35002_03">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_35002_03');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [인공지능 세탁코스]
+            </dt>
+            <dd>인터텍 시험 결과, 섬세의류 3kg 오염도 적음 기준 인공지능세탁 코스 사용 시 표준 코스 대비 옷감 손상 15% 개선</dd>
+            <dd>인터텍 시험 결과, 일반 면섬유 3㎏ 오염도 많음 기준 인공지능세탁 코스 사용 시 표준 코스 대비 세탁성능 15% 향상</dd>
+            <dd>인공지능세탁 코스는 최대용량 6kg 이하에서 동작하며, 실사용 환경 및 세탁물 종류에 따라 다를 수 있습니다.</dd>
+            <dd>초기 표시된 시간과 실제 동작 시간은 다를 수 있습니다.</dd>
+            <dd>해당 성능은 실사용 환경에 따라 다를 수 있습니다.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

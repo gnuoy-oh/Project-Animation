@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--pink">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            미세먼지 코스
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          옷에서 미세먼지 로그아웃!
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능2_미세먼지 코스(영상).mp4" type="video/mp4" />
+            미세먼지 코스 영상
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 영상입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 등록특허 / 무빙행어 코스안내 / 미세먼지 제거 효과
+            </p>
+            <button onclick="uspPopOpen('usp_pop_20011_02');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          외투에 남아있는 미세먼지! 특허 받은
+          <br /><em>무빙행어 플러스의 분당 200회의 움직임</em>이
+          <br />깔끔히 털어줄 거에요.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_20011_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_20011_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [등록특허]
+            </dt>
+            <dd>
+              무빙행어 관련 글로벌 등록특허 22건 / 트루스팀 관련 글로벌 등록특허 46건
+              <br />
+              (‘19.10.16 기준)
+            </dd>
+            <dt>
+              [무빙행어 코스안내]
+            </dt>
+            <dd>
+              등록특허 / 무빙행어 코스안내 / 미세먼지 제거 효과
+            </dd>
+            <dt>
+              [미세먼지 제거 효과]
+            </dt>
+            <dd>
+              인터텍 시험 결과, 자사가 제시한 기준으로 ISO 12103-1(A2 Fine Test Dust)
+              먼지를 셔츠(폴리 65%, 면 35% 재질) 1벌의 등 부위 3곳에
+              10cm × 10cm 크기로 도포한 후, 스팀살균(미세먼지) 코스 행정 전/후
+              면적으로 비교 시 평균 제거 효율 99%임
+            </dd>
+            <dd>
+              미세먼지 제거 효과는 사용 환경에 따라 차이가 있을 수 있습니다.
+            </dd>
+            <dd>
+              트루 스팀 일부 인증은 해당 모델에 한함
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--purple">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            모발 밀도/모발 굵기 변화
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          한 올 한 올 소중히 대할게요
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능2_모발밀도, 모발 굵기 변화(영상).mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <button onclick="uspPopOpen('usp_pop_24003_02');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          모발 밀도 변화율은 21.64%
+          <br />모발 굵기 변화율은 19.46%로
+          <br /><em>치료 효과는 임상시험으로 입증된 결과예요.</em>
+        </p>
+        <p class="component-content__subtext">
+          * 개인차가 있을 수 있습니다.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_24003_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_24003_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>임상시험 결과</dt>
+            <dt>
+              <br />
+              모발 밀도 변화량
+            </dt>
+            <dd>
+              시험군 평균 13.53개 (표준편차 6.92),
+
+            </dd>
+            <dd>
+              대조군 평균 -2.94개 (표준편차 4.74)
+              <br />
+            </dd>
+            <dt>
+              모발 굵기 변화량
+            </dt>
+            <dd>
+              시험군 평균 11.82um (표준편차 9.51),
+            </dd>
+            <dd>
+              대조군 평균 -3.47um (표준편차 8.73)
+            </dd>
+            <dd>
+              주3회 16주 27분 사용/PP SET 기준 분석/PP SET 피험자 수 46명
+              (시험군 30명, 대조군 16명) 대상/(16주-기저시점) 변화율, 변화량 차이 /
+              1cm2당 평균개수/2019.11-2020.04/분당S병원/대조군: Sham 기기
+              (외관상 동일하나, 레이저부는 작동하지 않으며 백색 LED를 사용)사용자
+            </dd>
+            <dd>
+              개인차가 있을 수 있습니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

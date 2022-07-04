@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+</head>
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 4
+          </span>
+          <span class="badge__text">
+            저소음 바람
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          쉿. 조용. <br />나의 퓨리케어 에어로타워
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능4_저소음 바람(영상).mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 출처 : 국가소음정보시스템
+            </p>
+            <button onclick="uspPopOpen('usp_pop_36009_04');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>조용하지만 상쾌한 자연의 바람처럼 시원함을 전해요.</em>
+          <br />집중이 필요한 서재, 아이가 잠든 방에서도
+          <br />마음 놓고 사용해 보세요.
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="usp_pop_36009_04">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_36009_04');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>[저소음 바람]</dt>
+            <dd>시험일시 : '21. 3. 31</dd>
+            <dd>시험기관 : LG전자 자체 평가</dd>
+            <dd>대상모델 : FS061PWHA</dd>
+            <dd>시험조건:24.3℃, 20%RH (표준시험환경조건)</dd>
+            <dd>시험장소 : LG전자 가산R&D캠퍼스 완전무향실(4.8m*4.8m*4.0m)</dd>
+            <dd>시험방법</dd>
+            <dd>LMS 소음 측정기로 Sharpness 측정</dd>
+            <dd>소음 측정 시 1kHz 기준으로 실험 측정값 도출</dd>
+            <dd>시험결과 : 집중청정(10단계) 운전 시, Sharpness 1.13로 고주파 소음이 없는 순음</dd>
+            <dd>(완전히 단일한 주파수의 소리)인 1 acum에 가까움</dd>
+            <dd>실험실 측정 기준으로 실 사용환경에서는 달라질 수 있습니다.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--cream-green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 3
+          </span>
+          <span class="badge__text">
+            식물케어
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          틔운 미니에게 맡겨만 주세요
+        </h2>
+        <div class="component-content__source">
+          <img src="../images/39002_03_contents.png" class="component-content__img" alt="식물">
+          <div class="component-content__description">
+            <button onclick="uspPopOpen('usp_pop_39002_03');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          틔운 미니는 식물의 성장 단계에 맞추어
+          <br /><em>빛의 높이를 조절</em>하고
+          <br />성장에 필요한 <em>적정 온도를 알려줘요.</em>
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="usp_pop_39002_03">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_39002_03');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt class="screen-out">요악 설명</dt>
+            <dd>
+              적정 온도 알림은 LG ThinQ 앱 연동 시 화면의 알람을 통해
+              확인가능하며, 적정 온도 범위 (17~27℃)를 벗어난 경우 제품의 표시등을
+              통해서도 확인 가능 합니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 3
+          </span>
+          <span class="badge__text">
+            인공지능 듀얼 인버터
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          에너지와 쾌적함 둘 다 세이브!
+        </h2>
+        <div class="component-content__source">
+          <img src="../images/03_contents.png" alt="에어컨" class="component-content__img">
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 인공지능 듀얼인버터 30% 절전
+            </p>
+            <button onclick="uspPopOpen('usp_pop_index_03');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>쾌속/쾌적냉방을 두개의 엔진으로</em>
+          <br /><em>개별 운전</em>해 전력은 30% 아껴주고,
+          <br />쾌적함은 오래오래 유지해줘요.
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="usp_pop_index_03">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_index_03');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              자사실험치, FQ22L9DRAN, 17년 인버터 대비 마이크로 제어 적용 시, 목표 설정온도 24 ℃, 2시간 운전기준, 주택환경실험실 85.8 ㎡, 운전시 소비전력량 기준
+            </dd>
+            <dd>
+              냉방 성능은 실제 환경에 따라 차이가 있을 수 있습니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

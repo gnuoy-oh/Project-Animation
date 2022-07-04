@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--cream-green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            식물케어
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          틔운에게 맡겨만 주세요
+        </h2>
+        <div class="component-content__source">
+          <img src="../images/39011_02_contents.png" class="component-content__img" alt="식물">
+          <div class="component-content__description">
+            <button onclick="uspPopOpen('usp_pop_39012_02');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          틔운은 식물을 잘 자라게 도와줘요.
+          <br /><em>빛과 온도, 물과 바람</em>
+          <br />식물에게 필요한 기술을 담았어요.
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="usp_pop_39012_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_39012_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              LG틔운은 주위 온도가 10~35℃ 인 장소에 설치하세요.
+              특히 겨울철 난방이 되지 않아 10℃보다 낮은 온도에서 사용하시는 경우
+              제품 내부에 결빙이 생기거나 이슬이 과도하게 맺혀
+              제품 외부로 누수가 발생 할 수 있습니다.
+            </dd>
+            <dd>
+              물이나 빗물이 튀는 장소나 습기가 많은 곳은 피하여 습기가 적고 바람이
+              잘 통하는 곳에 설치하세요.
+            </dd>
+            <dd>
+              열기가 나오는 곳이나 연탄가스가 발생하는 곳, 먼지가 많은 곳을
+              피하여 설치하세요.
+            </dd>
+            <dd>
+              수평을 맞추지 않으면 물 공급이 원할하지 않거나 누수가 발생할 수 있습니다.
+              제품을 이동하였을 경우에는 수평계(혹은 스마트폰의 수평계어플리케이션)를
+              사용하여 제품 상단의 네 모서리(앞,뒷면 및 측면) 기울기를 0.3도 이내로
+              맞춰주세요.
+            </dd>
+            <dd>
+              보다 자세한 사항은 제품에 동봉된 사용자 설명서를 참고해 주세요.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+</html>

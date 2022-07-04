@@ -1,0 +1,22 @@
+.miniusp {
+  .badge {
+    display: flex;
+    justify-content: center;
+  }
+
+  .badge__order,
+  .badge__text {
+    display: block;
+    font-size: 18px;
+  }
+
+  .badge__order {
+    padding: 8px 14px;
+    font-weight: 700;
+  }
+
+  .badge__text {
+    border-left: none;
+    padding: 8px 18px;
+  }
+}

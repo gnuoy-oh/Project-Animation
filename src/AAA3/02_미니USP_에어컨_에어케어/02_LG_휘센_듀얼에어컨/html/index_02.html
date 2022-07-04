@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--green component-content--video">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            듀얼 냉방
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          누가 요즘 냉방을 한 가지만 쓰나요?
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능2_듀얼 냉방(영상).mp4" type="video/mp4" />
+            자동 청정관리 영상
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 이미지입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 아이스 쿨파워 / 직접바람 / 간접바람
+            </p>
+            <button onclick="uspPopOpen('usp_pop_index_02');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>강력냉방부터 부드러운 간접 냉방까지</em>
+          <br />자유롭게 바람을 조절해 보세요.
+          <br />취향과 상황에 따라 원하는 냉방이 가능해요.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_index_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_index_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [아이스 쿨파워]
+            </dt>
+            <dd>
+              시험 장소 : 주택환경시험실(자사), 30.07㎡
+            </dd>
+            <dd>
+              시험 조건 : 실내 건구 33℃, 습구 22.4℃, 실외 건구 35℃, 습구 24℃
+            </dd>
+            <dd>
+              시험 모델명 : F-Q * 186PSNW, F-Q185SLFB
+            </dd>
+            <dd>
+              희망온도 18도 설정 후 강풍 모드와 쿨파워 모드 바람 온도 비교
+            </dd>
+            <dd>
+              자사시험 결과로 실제 사용환경에 따라 다를 수 있습니다.
+            </dd>
+            <dt>[직접바람/간접바람]</dt>
+            <dd> 리모컨 버튼의 상하좌우 바람제어 버튼을 눌러 직접바람/간접바람 설정 가능합니다.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

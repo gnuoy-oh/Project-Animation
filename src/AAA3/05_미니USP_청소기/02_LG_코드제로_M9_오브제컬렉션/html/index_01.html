@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--brown">
+        <div class="badge">
+          <span class="badge__order">
+            기능 1
+          </span>
+          <span class="badge__text">
+            파워풀 듀얼 스핀
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          바닥에 닿는 순간<br />밀착 청소가 시작돼요
+        </h2>
+        <div class="component-content__source">
+          <img src="../images/_01_contents.png" alt="청소기" class="component-content__img">
+          <div class="component-content__description">
+            <button onclick="uspPopOpen('usp_pop_20010_02');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          주행 휠이 없어 걸레가 바닥에 밀착되고
+          <br />제품이 걸레를 약 2kg 무게로 누르며 닦아주어
+          <br /><em>강력하고 깨끗한 물걸레 청소가 가능해요.</em>
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="usp_pop_20010_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_20010_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>2020년 6월, 자사 측정 결과, 청소 로봇 물통에 물을 가득 채우고
+              제품의 총 무게는 약 2.3kg, 양쪽 물걸레와 닿는 편평한 바닥면에 가해지는
+              무게는 약 2kg 임을 확인함.
+            </dd>
+            <dd>
+              제품 및 양쪽 물걸레에 가해지는 무게는 제조 과정 및 측정 환경에 따라
+              차이가 있을 수 있음
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+</html>

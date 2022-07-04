@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--purple">
+        <div class="badge">
+          <span class="badge__order">
+            기능 1
+          </span>
+          <span class="badge__text">
+            위생 세탁
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          큰 빨래, 작은 빨래 모두 깔끔하게!
+        </h2>
+        <div class="component-content__source">
+          <img class="component-content__img" src="../images/35018_01_contents.png" alt="위생 세탁">
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 영상입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 위생 세탁
+            </p>
+            <button onclick="uspPopOpen('usp_pop_35027_01');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          위 트롬은 트루스팀,
+          <br />아래 미니워시는 표준코스 60°C 세탁이 더해져
+          <br /><em>위, 아래 모두 위생적인 세탁이 가능해요.</em>
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_35027_01">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_35027_01');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [위생 세탁]
+            </dt>
+            <dd>
+              트롬 : 영국 알러지 협회(BAF) 집먼지진드기, 개, 고양이, 꽃가루 알러젠 제거 인증
+              <br />(알러지케어코스_트루스팀적용 기준)
+            </dd>
+            <dd>
+              트롬 : 한국의과학연구원(KRIBS) 시험 결과, 시험편 표면에 유해세균
+              <br />(황색포도상구균, 녹농균, 폐렴간균)을 접종 후 국제 에너지 규격 시험 50%
+              <br />부하와 함께 알러지케어 코스 행정 시 99.99% 살균됨
+            </dd>
+            <dd>
+              미니워시 : 한국의류시험연구원 (KATRI) 시험 결과, 한국의류시험연구원(KATRI)
+              라벨 인증, 유럽 에너지 규격 시험 부하 2 kg 소량세탁(+60°C ) 코스
+              유해세균(황색포도상구균, 녹농균, 폐렴간균) 99.9 % 살균
+            </dd>
+            <dd>
+              살균 효과는 세균의 종류, 사용환경 등에 따라 차이가 있을 수 있습니다.
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

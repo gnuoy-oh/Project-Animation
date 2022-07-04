@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--pink component-content--video">
+        <div class="badge">
+          <span class="badge__order">
+            기능 1
+          </span>
+          <span class="badge__text">
+            듀얼 트루스팀
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          뽀송뽀송 새옷 입는 기분
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능1_듀얼 트루스팀(영상).mp4" type="video/mp4" />
+            듀얼 트루스팀 영상
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 영상입니다.
+            </p>
+            <button onclick="uspPopOpen('usp_pop_30003_01');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>옷 깊숙한 곳의 냄새까지 잡아주는</em>
+          <br />듀얼 트루스팀 기능으로
+          <br />드라이클리닝 비용을 절약해 보세요.</em>
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_30003_01">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_30003_01');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [스팀살균(표준)코스]
+            </dt>
+            <dd>
+              인터텍 시험 결과, 황색포도상구균, 녹농균, 폐렴간균, 대장균을 KS포에
+              접종한 후 셔츠 1벌의 상/하/전/후/안쪽 5곳에 부착하여 스팀살균(표준)코스
+              행정 시 99.99% 제거함
+            </dd>
+            <dt>
+              [스팀살균(바이러스)코스]
+            </dt>
+            <dd>
+              전남대학교 산학협력단 시험 결과, 인플루엔자 A(H3N2), 아데노(ICHV),
+              헤르페스(IBRV), 코로나(PEDV), 인플루엔자 A(H1N1), 엔테로 바이러스(PEV),
+              코로나(MHV), 로타, A형간염(hepA), 인플루엔자 B, 리노 바이러스를
+              5cm x 5cm 포에 접종한 후 셔츠 1벌의 등부위 상/중/하에 부착하여
+              스팀살균(바이러스) 코스 행정시 99.99% 제거함
+            </dd>
+            <dd>
+              코로나(MHV), 코로나(PEDV) 바이러스는 신종 코로나 바이러스 19 (COVID19)에
+              대한 시험결과가 아님
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

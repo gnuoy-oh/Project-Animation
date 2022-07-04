@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 1
+          </span>
+          <span class="badge__text">
+            자동 청정관리
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          투명하네 투명해!<br />속까지 깨끗한 에어컨
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능1_자동 청정관리(영상).mp4" type="video/mp4" />
+            자동 청정관리 영상
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 소비자의 이해를 돕기 위해 연출된 이미지입니다.
+            </p>
+            <p class="component-content__description-text">
+              * 향균극세필터 / 열교환기 세청 / AI건조
+            </p>
+            <button onclick="uspPopOpen('usp_pop_index_01');" type="button"
+              class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          바람이 들어오는 필터부터 내보내는 팬까지
+          <br />바람이 지나는 길을 알아서 깨끗하게 관리해
+          <br /><em>에어컨 속 위생 걱정을 덜어드려요.</em>
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_index_01">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_index_01');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dt>
+              [항균극세필터]
+            </dt>
+            <dd>
+              극세필터는 생활먼지, 애완동물 털 등 입자가 큰 먼지를 걸러줍니다.
+            </dd>
+            <dd>
+              본 시험 결과는 ISO 시험 규격에 따라 국제 공인시험기관으로부터
+              황색포도상구균 99.9%, 폐렴균 99.9%, 대장균 99.9% 감소율에 대한
+              시험 성적서를 취득하였으며, 이는 실사용 환경에 따라
+              다를 수 있습니다. (시험기관 : KOTITI시험연구원, FITI시험연구원,
+              참조 규격 : ISO 20743:2013)
+              (시험 환경 : (37±2)℃, 시험편, 대조시험편에 시험균을 접촉 시킨 후
+              18~24시간 배양 후 대조시험편 대비 시험편 시험균을 계수한
+              감소율로 효과를 표기, 시험균: 황색포도상구균, 폐렴균, 대장균)
+            </dd>
+            <dd>
+              해당 필터는 필터형 보존 처리제품으로 한국환경산업기술원
+              생활화학제품안전센터에 안전기준적합확인 신고를 완료 하였습니다.
+              안전확인대상생활화학제품 안전/ 표시 기준
+              (환경부 고시 제2020-117호) 및 안전확인대상생활화학제품 시험 검사
+              기준 및 방법 규정 (국립환경과학원고시 제2019-70호)에 따라
+              공인시험기관으로부터 확인결과서를 취득(시험기관 : FITI시험연구원)
+              하였으며, 한국환경산업기술원 생활화학제품안전센터에
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>
