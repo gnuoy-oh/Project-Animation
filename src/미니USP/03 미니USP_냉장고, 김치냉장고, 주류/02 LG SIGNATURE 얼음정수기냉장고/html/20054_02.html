@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--deep-green">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            얼음 정수기​
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          이렇게 편리한 냉장고 봤나요?
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/20054_02.mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <button onclick="uspPopOpen('usp_pop_20054_02');" type="button" class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>방문관리 서비스</em>로 물과 얼음은 더 깨끗하게,
+          <br /><em>정량급수</em>로 원하는 용량에 맞춰 편리하게,
+          <br />냉동실을 열지 않고도 <em>각얼음, 조각얼음</em>을 즐겨보세요.
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_20054_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_20054_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              정량급수: 120ml, 500ml, 1.0L 설정가능​
+            </dd>
+            <dd>
+              정기적인 방문관리 서비스에 가입한 고객에게만 제공됩니다​
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

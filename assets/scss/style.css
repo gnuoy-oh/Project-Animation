@@ -160,6 +160,16 @@ body * {
   color: #9e7cf0;
 }
 
+.component-content--vivid-purple .badge__order,
+.component-content--vivid-purple .badge__text {
+  color: #652df1;
+  border: 1px solid #652df1;
+}
+
+.component-content--vivid-purple .component-content__title {
+  color: #652df1;
+}
+
 .component-content--pink .badge__order,
 .component-content--pink .badge__text {
   color: #fc566f;
@@ -208,6 +218,66 @@ body * {
 
 .component-content--cream-purple .component-content__title {
   color: #b6a0f7;
+}
+
+.component-content--deep-green .badge__order,
+.component-content--deep-green .badge__text {
+  color: #20552e;
+  border: 1px solid #20552e;
+}
+
+.component-content--deep-green .component-content__title {
+  color: #20552e;
+}
+
+.component-content--yellow .badge__order,
+.component-content--yellow .badge__text {
+  color: #fab350;
+  border: 1px solid #fab350;
+}
+
+.component-content--yellow .component-content__title {
+  color: #fab350;
+}
+
+.component-content--warm-yellow .badge__order,
+.component-content--warm-yellow .badge__text {
+  color: #f9b34e;
+  border: 1px solid #f9b34e;
+}
+
+.component-content--warm-yellow .component-content__title {
+  color: #f9b34e;
+}
+
+.component-content--light-green .badge__order,
+.component-content--light-green .badge__text {
+  color: #b2ca61;
+  border: 1px solid #b2ca61;
+}
+
+.component-content--light-green .component-content__title {
+  color: #b2ca61;
+}
+
+.component-content--orange .badge__order,
+.component-content--orange .badge__text {
+  color: #f57948;
+  border: 1px solid #f57948;
+}
+
+.component-content--orange .component-content__title {
+  color: #f57948;
+}
+
+.component-content--cream-yellow .badge__order,
+.component-content--cream-yellow .badge__text {
+  color: #fbb34a;
+  border: 1px solid #fbb34a;
+}
+
+.component-content--cream-yellow .component-content__title {
+  color: #fbb34a;
 }
 
 .miniusp .badge {
@@ -305,6 +375,7 @@ body * {
   display: block;
   margin-top: 18px;
   font-size: 31px;
+  line-height: 1.4;
 }
 
 .miniusp .component-content__source {
@@ -386,6 +457,14 @@ body * {
 
 .miniusp .component-content--video .component-content__description {
   margin: 0;
+}
+
+.miniusp .component-content--video .component-content__video--sm {
+  width: 65%;
+}
+
+.miniusp .component-content--video .component-content__description--sm {
+  margin-left: 20px;
 }
 
 @media (max-width: 300px) {
@@ -539,6 +618,14 @@ body * {
 }
 
 .miniusp .technology-definition.technology-definition--title-counter dd::before {
+  content: none;
+}
+
+.miniusp .technology-definition.technology-definition--not-sign dd {
+  padding: 0;
+}
+
+.miniusp .technology-definition.technology-definition--not-sign dd::before {
   content: none;
 }
 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--vivid-purple">
+        <div class="badge">
+          <span class="badge__order">
+            기능 4
+          </span>
+          <span class="badge__text">
+            보안 기능​
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          언제 어디서든 내 화면 절대 지켜!
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능4_보안 기능(영상).mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * LG Glance by Mirametrix® 기능의 이해를 돕기 위해 연출된 영상입니다.​
+            </p>
+            <p class="component-content__description-text">
+              * LG Glance by Mirametrix® 사용법​
+            </p>
+            <button onclick="uspPopOpen('21022_04');" type="button" class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          <em>부재 시 화면 자동 잠금, 미 응시 화면 자동 흐림 처리,​</em>
+          <br /><em>타인이 화면 볼 때 경고 알림 기능</em>으로​
+          <br />언제 어디서든 보안을 지킬 수 있어요.​
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="21022_04">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('21022_04');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition technology-definition--not-sign">
+            <dt>
+              부재 시 화면 자동 잠금 (Presence Detection)​
+            </dt>
+            <dd>
+              (사용자가 카메라의 시야에서 벗어나면 자동으로 화면이 잠금 처리됩니다.​
+            </dd>
+            <dt>
+              미 응시 화면 자동 흐림 처리 (Smart Display)​
+            </dt>
+            <dd>
+              응시하지 않는 화면은 자동 흐림 처리되어 타인 노출이 감소됩니다.​
+            </dd>
+            <dt>
+              타인이 화면 볼 때 경고 알림 (Privacy Alert)​
+            </dt>
+            <dd>
+              사용자 뒤에서 타인이 화면을 응시하면, 이를 감지하여 경고 알림을 띄워줍니다.​
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--orange component-content--video">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            스마트 스크린​
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          터치 마이 스탠바이미
+        </h2>
+        <div class="component-content__source ">
+          <video class="component-content__video component-content__video--sm" playsinline muted autoplay>
+            <source src="../video/기능2_스마트스크린(영상).mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <p class="component-content__description-text">
+              * 상기 이미지는 연출된 영상으로 실제와 다를 수 있습니다.​
+            </p>
+            <p class="component-content__description-text">
+              * 본 제품은 webOS 플랫폼을 지원합니다.​
+            </p>
+            <p class="component-content__description-text">
+              * 터치는 앱 별로 지원 방식에 따라 동작 방법이 상이할 수 있습니다.
+            </p>
+            <p class="component-content__description-text">
+              자세한 사항은 홈 화면 하단의 ‘터치 조작 설정’에서 확인 및 설정이 가능합니다.​
+            </p>
+            <button onclick="uspPopOpen('usp_pop_20015_02');" type="button" class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          LG Apps에서 다양한 앱을 다운받아 즐겨 보세요. ​
+          <br /><em>풀터치 스크린을 탑재해서 스마트폰 사용자라면</em>
+          <br /><em>누구나 직관적으로 조작 가능해요.</em>
+        </p>
+      </div>
+    </main>
+
+
+    <div class="modal" id="usp_pop_20015_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_20015_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              터치 조작이 불가한 앱의 경우 함께 제공되는 리모컨을 통해
+              조작 가능합니다.​
+            </dd>
+            <dd>
+              셰어링탭이란?
+              <br />
+              NFC 기술을 기반으로 기기와 모바일의 화면 및 콘텐츠를 양방향으로
+              연동하는 기능 (최초 사용시 ThinQ 앱 설치 및 기기 연결 필수/ 모바일 기기에 따라
+              지원여부 달라질 수 있음)​
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

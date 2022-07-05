@@ -19,6 +19,7 @@
     display: block;
     margin-top: 18px;
     font-size: 31px;
+    line-height: 1.4;
   }
 
   .component-content__source {
@@ -77,7 +78,7 @@
     line-height: 1.4;
   }
 
-  .component-content__subtext{
+  .component-content__subtext {
     margin-top: 8px;
     font-size: 10px;
     color: #888888;
@@ -90,6 +91,14 @@
 
     .component-content__description {
       margin: 0;
+    }
+
+    .component-content__video--sm {
+      width: 65%;
+    }
+
+    .component-content__description--sm {
+      margin-left: 20px;
     }
   }
 }

@@ -10,6 +10,17 @@
   }
 }
 
+.component-content--vivid-purple {
+  .badge__order,
+  .badge__text {
+    color: #652df1;
+    border: 1px solid #652df1;
+  }
+  .component-content__title {
+    color: #652df1;
+  }
+}
+
 .component-content--pink {
   .badge__order,
   .badge__text {
@@ -53,6 +64,7 @@
     color: #53b69c;
   }
 }
+
 .component-content--cream-purple {
   .badge__order,
   .badge__text {
@@ -64,5 +76,68 @@
   }
 }
 
+.component-content--deep-green {
+  .badge__order,
+  .badge__text {
+    color: #20552e;
+    border: 1px solid #20552e;
+  }
+  .component-content__title {
+    color: #20552e;
+  }
+}
 
+.component-content--yellow {
+  .badge__order,
+  .badge__text {
+    color: #fab350;
+    border: 1px solid #fab350;
+  }
+  .component-content__title {
+    color: #fab350;
+  }
+}
 
+.component-content--warm-yellow {
+  .badge__order,
+  .badge__text {
+    color: #f9b34e;
+    border: 1px solid #f9b34e;
+  }
+  .component-content__title {
+    color: #f9b34e;
+  }
+}
+
+.component-content--light-green {
+  .badge__order,
+  .badge__text {
+    color: #b2ca61;
+    border: 1px solid #b2ca61;
+  }
+  .component-content__title {
+    color: #b2ca61;
+  }
+}
+
+.component-content--orange {
+  .badge__order,
+  .badge__text {
+    color: #f57948;
+    border: 1px solid #f57948;
+  }
+  .component-content__title {
+    color: #f57948;
+  }
+}
+
+.component-content--cream-yellow {
+  .badge__order,
+  .badge__text {
+    color: #fbb34a;
+    border: 1px solid #fbb34a;
+  }
+  .component-content__title {
+    color: #fbb34a;
+  }
+}

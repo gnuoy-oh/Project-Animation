@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--orange">
+        <div class="badge">
+          <span class="badge__order">
+            기능 3
+          </span>
+          <span class="badge__text">
+            4세대 인공지능 알파 9​
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          사운드, 화질은 알파 9이 골라줄게!​
+        </h2>
+        <div class="component-content__source">
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능3_4세대 인공지능 알파9(영상).webm" type="video/webm" />
+          </video>
+          <div class="component-content__description">
+          </div>
+          <button onclick="uspPopOpen('index_03');" type="button" class="component-content__description-button button">
+            <span class="component-content__description-button-icon"></span>
+            <span class="component-content__description-button-text"> 세부정보 </span>
+          </button>
+        </div>
+        <p class="component-content__paragraph">
+          4세대 인공지능 알파 9가
+          <br />영상을 스스로 분석해
+          <br /><em>콘텐츠에 맞는 화질과 사운드를 제공해요.</em>
+        </p>
+      </div>
+    </main>
+    <div class="modal" id="index_03">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('index_03');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              ​인공지능 화질 , 인공지능 화질 프로는 모두 인공지능 알파9의 딥러닝 분석을 기반으로 합니다.​
+            </dd>
+            <dd>인공지능 화질, 인공지능 화질 프로는 TV 설정-> 일반 -> 인공지능 서비스 메뉴에서 ON/OFF 가능합니다.​
+            <dd>디지털 방송이나 USB 저장 장치의 영상, HDMI 영상 입력에만 지원됩니다.​</dd>
+            <dd>게임맞춤 화면 모드에서는 해당 기능을 설정할 수 없습니다.​</dd>
+            <dd>저작권 보호가 적용된 유료 콘텐츠에서는 동작하지 않습니다.​</dd>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>

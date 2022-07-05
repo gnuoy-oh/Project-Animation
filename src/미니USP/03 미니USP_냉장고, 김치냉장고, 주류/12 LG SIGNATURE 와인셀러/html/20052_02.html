@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../../../assets/scss/style.css" />
+
+</head>
+
+<body>
+  <div class="miniusp">
+    <main>
+      <div class="component-content component-content--yellow">
+        <div class="badge">
+          <span class="badge__order">
+            기능 2
+          </span>
+          <span class="badge__text">
+            오토 스마트 도어/오토 리프트​
+          </span>
+        </div>
+        <h2 class="component-content__title">
+          도어에 자동 기능을 곁들인​
+        </h2>
+        <div class="component-content__source">
+          <!-- TODO: 영상 누락 -->
+          <video class="component-content__video" playsinline muted autoplay>
+            <source src="../video/기능1_인공지능DD기술x6모션(영상).mp4" type="video/mp4" />
+          </video>
+          <div class="component-content__description">
+            <button onclick="uspPopOpen('usp_pop_20052_02');" type="button" class="component-content__description-button button">
+              <span class="component-content__description-button-icon"></span>
+              <span class="component-content__description-button-text"> 세부정보 </span>
+            </button>
+          </div>
+        </div>
+        <p class="component-content__paragraph">
+          냉장고 앞에 섰을 때 알아서 열어주는​
+          <br /><em>오토 스마트 도어</em>와
+          <br />누르면 열리고 올라오는 <em></em>오토 리프트</em>를 만나보세요.​
+        </p>
+      </div>
+    </main>
+
+    <div class="modal" id="usp_pop_20052_02">
+      <div class="modal__dimmed"></div>
+      <div class="modal__content">
+        <div class="modal__head">
+          <button onclick="uspPopClose('usp_pop_20052_02');" class="modal__head-button button" title="닫기"></button>
+        </div>
+        <div class="modal__body">
+          <dl class="technology-definition">
+            <dd>
+              오토 스마트 도어 = 상칸에만 해당 ​
+            </dd>
+            <dd>
+              오토 리프트 = 하칸에만 해당​
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../../../assets/js/index.js"></script>
+</body>
+
+
+</html>
