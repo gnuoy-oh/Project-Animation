@@ -387,6 +387,10 @@ body * {
   width: 100%;
 }
 
+.miniusp .component-content__video--sm {
+  width: 80%;
+}
+
 .miniusp .component-content__img {
   display: block;
   width: 100%;
@@ -569,7 +573,10 @@ body * {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-height: 450px;
+  overflow-y: auto;
   margin-top: 4px;
+  padding-right: 20px;
 }
 
 .miniusp .technology-definition dt,
